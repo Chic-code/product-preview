@@ -18,7 +18,6 @@ body {
 }
 .container {
   display: flex;
-
   max-width: 700px;
   width: 100%;
   border-radius: 12px;
@@ -111,50 +110,62 @@ p {
 svg {
   vertical-align: middle;
 }
+.mobile-image {
+  display: none;
+}
 @media (max-width: 37.5rem) {
-
   .container {
-    flex-direction: column; 
-    width: 100%; 
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+    width: 100%;
   }
 
   .image-card img {
     height: auto;
-    border-radius: 12px; 
+    border-radius: 12px;
   }
 
   .card-content {
-    padding: 20px; 
+    padding: 20px;
+  }
 
   .card-content h2 {
-    font-size: 20px; 
-    margin-bottom: 10px; 
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 
   .card-content h3 {
-    font-size: 28px; 
+    font-size: 28px;
   }
 
   .perfume {
-    font-size: 10px; 
+    font-size: 10px;
   }
 
   .card-content p {
-    font-size: 12px; 
-    margin-bottom: 15px; }
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
 
   .price-container {
     flex-direction: column;
+  }
 
   .price-container h3,
   .price-container del {
-    margin: 0; 
+    margin: 0;
   }
 
   .add-to-cart {
-    padding: 10px 15px; 
-    font-size: 14px; 
+    padding: 10px 15px;
+    font-size: 14px;
   }
 }
-}
-  }
